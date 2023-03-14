@@ -766,7 +766,7 @@ layer.
 
 <pre class="propdef">
 Name: box-shadow-offset
-Value: [ none | <<length>>{2} ]#
+Value: [ none | <<length>>{1,2} ]#
 Initial: none
 Applies to: all elements
 Inherited: no
@@ -786,6 +786,8 @@ where both values are described as <<length>> values.
     Specifies the <dfn>horizontal offset</dfn> of the shadow.
     A positive value draws a shadow that is offset to the right of the box,
     a negative length to the left.
+	If only one value is given,
+	it applies to both the horizontal and vertical offset.
 
   <dt><dfn id="shadow-offset-y">2nd <<length>></dfn>
   <dd>
@@ -935,6 +937,7 @@ Additions Since Level 3</h3>
 		<li><a href="#partial-borders">Partial Borders</a> (make part of border shorthand as well!)
 		<li><a href="http://lists.w3.org/Archives/Public/www-style/2012Oct/0314.html">More <css>border-radius</css> shorthands</a> for doing both corners on a side at once.
 		<li>Splitting horizontal / vertical spread radius for box-shadow, if we can come up with a sane syntax for it.
+		<li>Allowed to define one value for both ''box-shadow-offset'' directions
 	</ul>
 
 <h2 id="acknowledgments">Acknowledgments</h2>
